@@ -1,0 +1,401 @@
+/* Estilos de letras */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@500&display=swap');
+
+/* menu de navegacion */
+.navbar{
+    background-color: #313131;
+}
+
+nav a{
+    color: rgb(172, 172, 172);
+}
+
+.navbar-brand, .active{
+    color: white;
+}
+
+.navbar a:hover{
+    color: whitesmoke;
+}
+
+.navbar a:active{
+    color: black;
+}
+
+.navbar{
+    height: 6rem;
+    font-family: 'Big Shoulders Inline Display', cursive;
+}
+
+.navbar-toggler{
+    background-color: #515151;
+    color: white;
+    border: double black;
+    box-shadow: 0 0 2vh #414141 ;
+}
+
+.navbar-collapse{
+    background-color: #313131;
+    padding: 2vh;
+    border-radius: 0 0 5vw 5vw;
+}
+
+
+/* carrusel y titulos */
+    .nombreTitulo {
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0.3rem 0.3rem 0.6rem white;
+    }
+
+    .tituloPrincipal{
+        font-family: 'Big Shoulders Inline Display', cursive;
+        text-shadow: 0.1rem 0.1rem 0.5rem rgb(210, 210, 210)
+    }
+
+    .tituloSecundario{
+        font-family: 'Fredericka the Great', cursive;
+    }
+
+
+/* media querry que no se acomodaban solas con bootstrap */
+@media (max-width:480px) {
+    .nombreTitulo {
+        font-size: 6vw;
+    }
+
+    .tituloPrincipal{
+        font-size: 4vw;
+    }
+
+    .tituloSecundario{
+        font-size: 6vw;
+    }
+
+    .logopython svg, .logojava svg, .logohtml svg{
+        width: 16vw;
+        height: 16vh;
+    }
+    
+    .logocss3 svg{
+        width: 17vw;
+        height: 17vh;
+    }
+
+    .fas{
+        font-size: 13vw;
+    }
+
+    #sobre-mi p{
+        font-size: 2.5vw;
+    }
+
+    .seguidas2{
+        height: 70vw;
+    }
+    
+    #sobre-mi-texto{
+        width: 60%;
+    }
+    
+    .seguidas{
+        height: 55vw;
+    }
+
+    .navbar-nav a{
+        font-size: 3vw;
+    }
+
+    .card{
+        font-size: 3vw;
+    }
+
+    .navbar-toggler{
+        font-size: 2vw;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+    .nombreTitulo {
+        font-size: 7vw;
+    }
+
+    .tituloPrincipal{
+        font-size: 5vw;
+    }
+
+    .tituloSecundario{
+        font-size: 6vw;
+    }
+
+    .logopython svg, .logojava svg, .logohtml svg{
+        width: 15vw;
+        height: 15vh;
+    }
+    
+    .logocss3 svg{
+        width: 16vw;
+        height: 16vh;
+    }
+
+    .fas{
+        font-size: 12vw;
+    }
+
+    #sobre-mi p{
+        font-size: 2.25vw;
+    }
+
+    .seguidas2{
+        height: 55vw;
+    }
+    
+    #sobre-mi-texto{
+        width: 65%;
+    }
+    
+    .seguidas{
+        height: 52vw;
+    }
+
+    .navbar-nav a{
+        font-size: 2vw;
+    }
+
+    .card{
+        font-size: 2.5vw;
+    }
+
+    .navbar-toggler{
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width:768px) {
+    .nombreTitulo {
+        font-size: 6vw;
+    }
+
+    .tituloPrincipal{
+        font-size: 4vw;
+    }
+
+    .tituloSecundario{
+        font-size: 5vw;
+    }
+
+    .logopython svg, .logojava svg, .logohtml svg{
+        width: 11vw;
+        height: 11vh;
+    }
+    
+    .logocss3 svg{
+        width: 12vw;
+        height: 12vh;
+    }
+
+    .fas{
+        font-size: 7vw;
+    }
+
+    #sobre-mi p{
+        font-size: 2vw;
+    }
+
+    .seguidas2{
+        height: 40vw;
+    }
+
+    #sobre-mi-texto{
+        width: 70%;
+    }
+
+    .seguidas{
+        height: 50vw;
+    }
+    
+    .navbar-nav a{
+        font-size: 1.5vw;
+    }
+
+    .card{
+        font-size: 2vw;
+    }
+
+    .navbar-toggler{
+        font-size: 1vw;
+    }
+}
+
+
+/* imagenes carrusel inicio */
+
+#carrusel-back{
+    padding-top: 5vw;
+}
+
+#sobre-mi{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding-top: 10vw;
+    padding-bottom: 5vh;
+    background-color:rgba(65, 65, 65, .75);
+    color: rgb(205, 205, 205);
+}
+
+.bloque-about-me{
+    position: relative;
+    background-color: #414141;
+    /* padding-top: 10vw; */
+}
+
+#sobre-mi p{
+    /* background-color: rgba(65, 65, 65, .25); */
+    color: white;
+}
+
+#skills, #contacto{
+    /* height: 60vh; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: #414141;
+    color: rgb(205, 205, 205);
+    /* border: 5px dashed black; */
+}
+
+#portfolio{
+    /* height: 80vh; */
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    background-color:#515151;
+    color: rgb(205, 205, 205);
+}
+
+/* skills */
+.fas{
+    color: gray;
+}
+
+.fa-photo-video, .reparacion{
+    padding: 1rem 1rem 10rem 1rem;
+}
+
+/* colores hover logos */
+
+.reparacion:hover .fas{
+    color: rgb(175, 51, 51);
+}
+
+.fa-photo-video:hover{
+    color: rgb(68, 141, 104);
+}
+
+/* logo python */
+.logopython:hover #path1{
+    fill: #366994;
+}
+
+.logopython:hover #path2{
+    fill: #FFC331;
+}
+
+/* logo java */
+
+.logojava:hover #path1{
+    fill: #5382A1 ;
+}
+
+.logojava:hover #path2{
+    fill: #E76F00;
+}
+
+/* logo html */
+.logohtml:hover #path1{
+    fill: black ;
+}
+
+.logohtml:hover #path2{
+    fill: #e44d26 ;
+}
+
+.logohtml:hover #path3{
+    fill: #f16529 ;
+}
+
+.logohtml:hover #path4{
+    fill: #ebebeb ;
+}
+
+.logohtml:hover #path5{
+    fill: #ffffff ;
+}
+
+/* logo css */
+.logocss3:hover #path1{
+    fill: #2062af ;
+}
+
+.logocss3:hover #path2{
+    fill: #3c9cd7;
+}
+
+.logocss3:hover #path3{
+    fill: #fff ;
+}
+
+.logocss3:hover #path4{
+    fill: #d1d3d4 ;
+}
+
+.logocss3:hover #path5{
+    fill: #000000 ;
+}
+
+/* portfolio */
+.card{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.interior-card{
+    box-shadow: 1vw 1vh 10px rgb(75, 75, 75);
+    border-radius: 2rem;
+    padding: 2vh 1vw;
+    /* border:dashed black; */
+    height: 100%;
+}
+
+.card img{
+    height: 20vh;
+    border-radius: 2rem;
+}
+
+.card video{
+    border-radius: 3rem;
+}
+
+#imagen-portfolio{
+    height: 20vh;
+}
+
+#contacto .btn{
+    background-color: #313131;
+    border-color: #707070;
+}
+
+#contacto .btn:hover{
+    background-color: #707070;
+    border-color: #313131;
+}
+
+/* footer */
+footer{
+    height: 3rem;
+    background-color: #CA3E47;
+    font-family: 'Fredericka the Great', cursive;
+}
+

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body data-spy="scroll" data-target="#menu-navegacion">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md" id="menu-navegacion">
+            <a class="navbar-brand" href="#">Matias Palacio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">MENU
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link active" href="#sobre-mi">Sobre mí<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section>
+        <!-- carousel con imagenes de presentacion -->
+        <div class="container mw-100 m-0 p-0 ">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item h-50 active">
+                        <img src="img/back1.jpg" class="d-block w-100 seguidas" alt="fondo negro1">
+                    </div>
+                    <div class="carousel-item h-50">
+                        <img src="img/back2.jpg" class="d-block w-100 seguidas" alt="fondo negro2">
+                    </div>
+                    <div class="carousel-item h-50">
+                        <img src="img/back3.jpg" class="d-block w-100 seguidas" alt="fondo negro3">
+                    </div>
+                </div>
+                <div class="carousel-caption d-block align-items-center h-100 pt-5 pb-5">
+                    <img src="img/IMG_propia.JPG" class="rounded-circle w-25" alt="">
+                    <h1 class="nombreTitulo">MATIAS PALACIO</h1>
+                    <div>
+                        <h5 class="tituloPrincipal"> Full Stack Web Developer </h5>
+                        <h5 class="tituloPrincipal"> Fotógrafo Aficionado </h5>
+                    </div>
+                </div>
+                <!-- codigo desactivado de las flechas de movimiento del carrusel para testear las imagenes -->
+                <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+        </div>
+        <div class="bloque-about-me pt-5">
+            <!-- carrusel imagenes detras de about me -->
+            <div class="w-75 mx-auto" id="carrusel-back">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/DJI_0010.MP4_000089289.jpg" class="d-block w-100 seguidas2 rounded-pill"
+                                alt="fondo negro1">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img/DJI_0013.MP4_000045912.png" class="d-block w-100 seguidas2 rounded-pill"
+                                alt="fondo negro2">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img/DJI_0014.MP4_000045245.jpg" class="d-block w-100 seguidas2 rounded-pill"
+                                alt="fondo negro3">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img/3photo.JPG" class="d-block w-100 seguidas2 rounded-pill" alt="fondo negro2">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img/4photo.JPG" class="d-block w-100 seguidas2 rounded-pill" alt="fondo negro2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sobre-mi" class="w-100 h-100">
+                <div class="container mx-auto text-center my-5" id="sobre-mi-texto">
+                    <h1 class="tituloSecundario text-white">Sobre mí</h1>
+                    <p class="pt-3 overflow-auto text-center rounded">Mi nombre es Matías Palacio, soy desarrollador
+                        web, programador, y fotógrafo aficionado. <br>
+                        Entusiasta de la programación, aprendiendo día a día más sobre sus distintos lenguajes.
+                        Apasionado por la tecnología y la naturaleza. Desde joven me dedique a aprender como es el
+                        armado y desarmado de PC y notebooks, y el manejo de sus sistemas. <br>
+                        Y aspiro a lograr en el futuro la mejor union entre la tecnologia y la naturaleza, pudiendo
+                        apreciar ambas en todo su esplendor.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div id="skills">
+            <div class="pt-5 container w-50 mx-auto text-center my-5">
+                <h1 class="my-5 tituloSecundario text-white">Skills</h1>
+                <div class="d-flex flex-column flex-md-row flex-wrap justify-content-between pt-5 pb-5">
+                    <div class="logopython pb-5" title="Python">
+                        <svg viewBox="0 0 256 255">
+                            <g>
+                                <path
+                                    d="M126.915866,0.0722755491 C62.0835831,0.0722801733 66.1321288,28.1874648 66.1321288,28.1874648 L66.2044043,57.3145115 L128.072276,57.3145115 L128.072276,66.0598532 L41.6307171,66.0598532 C41.6307171,66.0598532 0.144551098,61.3549438 0.144551098,126.771315 C0.144546474,192.187673 36.3546019,189.867871 36.3546019,189.867871 L57.9649915,189.867871 L57.9649915,159.51214 C57.9649915,159.51214 56.8001363,123.302089 93.5968379,123.302089 L154.95878,123.302089 C154.95878,123.302089 189.434218,123.859386 189.434218,89.9830604 L189.434218,33.9695088 C189.434218,33.9695041 194.668541,0.0722755491 126.915866,0.0722755491 L126.915866,0.0722755491 L126.915866,0.0722755491 Z M92.8018069,19.6589497 C98.9572068,19.6589452 103.932242,24.6339846 103.932242,30.7893845 C103.932246,36.9447844 98.9572068,41.9198193 92.8018069,41.9198193 C86.646407,41.9198239 81.6713721,36.9447844 81.6713721,30.7893845 C81.6713674,24.6339846 86.646407,19.6589497 92.8018069,19.6589497 L92.8018069,19.6589497 L92.8018069,19.6589497 Z"
+                                    fill="gray" id="path1"></path>
+                                <path
+                                    d="M128.757101,254.126271 C193.589403,254.126271 189.540839,226.011081 189.540839,226.011081 L189.468564,196.884035 L127.600692,196.884035 L127.600692,188.138693 L214.042251,188.138693 C214.042251,188.138693 255.528417,192.843589 255.528417,127.427208 C255.52844,62.0108566 219.318366,64.3306589 219.318366,64.3306589 L197.707976,64.3306589 L197.707976,94.6863832 C197.707976,94.6863832 198.87285,130.896434 162.07613,130.896434 L100.714182,130.896434 C100.714182,130.896434 66.238745,130.339138 66.238745,164.215486 L66.238745,220.229038 C66.238745,220.229038 61.0044225,254.126271 128.757101,254.126271 L128.757101,254.126271 L128.757101,254.126271 Z M162.87116,234.539597 C156.715759,234.539597 151.740726,229.564564 151.740726,223.409162 C151.740726,217.253759 156.715759,212.278727 162.87116,212.278727 C169.026563,212.278727 174.001595,217.253759 174.001595,223.409162 C174.001618,229.564564 169.026563,234.539597 162.87116,234.539597 L162.87116,234.539597 L162.87116,234.539597 Z"
+                                    fill="gray" id="path2"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="logojava pb-5" title="Java">
+                        <svg viewBox="0 0 256 346">
+                            <g>
+                                <path
+                                    d="M82.5539491,267.472524 C82.5539491,267.472524 69.35552,275.147869 91.9468218,277.745105 C119.315549,280.867375 133.303389,280.419607 163.463913,274.711273 C163.463913,274.711273 171.393396,279.683258 182.467491,283.989644 C114.855564,312.966982 29.4483782,282.311215 82.5539491,267.472524"
+                                    fill="gray" id="path1"></path>
+                                <path
+                                    d="M74.2921309,229.658996 C74.2921309,229.658996 59.4888145,240.616727 82.0968727,242.955171 C111.333004,245.971316 134.421411,246.218007 174.373236,238.524975 C174.373236,238.524975 179.899113,244.127185 188.588218,247.190807 C106.841367,271.094691 15.79008,249.075898 74.2921309,229.658996"
+                                    fill="gray" id="path1"></path>
+                                <path
+                                    d="M143.941818,165.514705 C160.601367,184.695156 139.564684,201.955142 139.564684,201.955142 C139.564684,201.955142 181.866124,180.117876 162.438982,152.772422 C144.294633,127.271098 130.380335,114.600495 205.706705,70.9138618 C205.706705,70.9138618 87.4691491,100.44416 143.941818,165.514705"
+                                    fill="gray" id="path2"></path>
+                                <path
+                                    d="M233.364015,295.441687 C233.364015,295.441687 243.131113,303.489396 222.60736,309.715316 C183.580858,321.537862 60.1748945,325.107898 25.8932364,310.186356 C13.5698618,304.825251 36.67968,297.385425 43.9491491,295.824291 C51.5304727,294.180305 55.8629236,294.486575 55.8629236,294.486575 C42.15808,284.832116 -32.7195927,313.443607 17.8287709,321.637469 C155.681513,343.993251 269.121164,311.570618 233.364015,295.441687"
+                                    fill="gray" id="path1"></path>
+                                <path
+                                    d="M88.9008873,190.479825 C88.9008873,190.479825 26.1287564,205.389265 66.6717091,210.803433 C83.7901964,213.095331 117.915462,212.576815 149.702284,209.913484 C175.680233,207.722124 201.765236,203.062924 201.765236,203.062924 C201.765236,203.062924 192.605091,206.985775 185.977949,211.510924 C122.233949,228.275665 -0.907636364,220.476509 34.5432436,203.328233 C64.5241018,188.83584 88.9008873,190.479825 88.9008873,190.479825"
+                                    fill="gray" id="path1"></path>
+                                <path
+                                    d="M201.506444,253.422313 C266.305164,219.7504 236.344785,187.392 215.432844,191.751447 C210.307258,192.818269 208.021876,193.742662 208.021876,193.742662 C208.021876,193.742662 209.924655,190.761891 213.558924,189.471651 C254.929455,174.927127 286.746065,232.368873 200.204102,255.11936 C200.204102,255.120291 201.206691,254.223825 201.506444,253.422313"
+                                    fill="gray" id="path1"></path>
+                                <path
+                                    d="M162.438982,0.371432727 C162.438982,0.371432727 198.325527,36.27008 128.402153,91.4720582 C72.3307055,135.753542 115.616116,161.001658 128.37888,189.848669 C95.6490473,160.318371 71.6297309,134.322735 87.7437673,110.128407 C111.395375,74.6132945 176.918342,57.3942691 162.438982,0.371432727"
+                                    fill="gray" id="path2"></path>
+                                <path
+                                    d="M95.2683055,344.665367 C157.466996,348.646865 252.980131,342.45632 255.24224,313.025629 C255.24224,313.025629 250.893964,324.182575 203.838371,333.042967 C150.750487,343.033484 85.2740655,341.867055 46.4393309,335.464262 C46.4402618,335.463331 54.3892945,342.043927 95.2683055,344.665367"
+                                    fill="gray" id="path1"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="logohtml pb-5" title="HTML5">
+                        <svg viewBox="0 0 512 512">
+                            <path
+                                d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"
+                                fill="gray" id="path1" />
+                            <path fill="gray" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512" id="path2" />
+                            <path fill="gray" d="M256 480.5V131H404.3L376 447" id="path3" />
+                            <path fill="rgb(221, 221, 221)"
+                                d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"
+                                id="path4" />
+                            <path fill="rgb(221, 221, 221)"
+                                d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"
+                                id="path5" />
+                        </svg>
+                    </div>
+                    <div class="logocss3 pb-5" title="CSS3">
+                        <svg viewBox="0 0 538.584 538.583">
+                            <path d="M405.5 467.454L269.29 504.13l-136.212-36.676-31.432-340.525h335.29L405.5 467.454z"
+                                fill="gray" id="path1" />
+                            <path d="M269.289 154.511v320.367l.308.084 110.229-29.682 25.443-290.769h-135.98z"
+                                fill="gray" id="path2" />
+                            <path
+                                d="M191.985 76.899V56.631h29.571V34.453h-51.749v62.684h51.749V76.899h-29.571zm82.766-20.268h20.674V34.453h-51.754v22.178c6.924 6.924 10.535 10.238 20.549 20.252-5.854 0-20.549.021-20.549.02v20.234h51.754V76.899l-20.674-20.268zm73.352 0h20.673V34.453H317.02v22.178c6.924 6.924 10.537 10.238 20.551 20.252-5.852 0-20.551.021-20.551.02v20.234h51.757V76.899l-20.674-20.268z"
+                                fill="gray" id="path5" />
+                            <path
+                                d="M269.168 239.656l-97.49 40.602 3.233 40.199 94.257-40.301 100.265-42.868 4.157-41.122-104.422 43.49z"
+                                fill="rgb(221, 221, 221)" id="path3" />
+                            <path d="M171.677 280.258l3.233 40.199 94.257-40.301v-40.5l-97.49 40.602z"
+                                fill="rgb(221, 221, 221)" id="path4" />
+                            <path d="M373.59 196.167l-104.422 43.489v40.5l100.265-42.868 4.157-41.121z"
+                                fill="rgb(221, 221, 221)" id="path4" />
+                            <path
+                                d="M171.827 280.258l3.234 40.199 144.625.461-3.235 53.598-47.59 13.398-45.748-11.551-2.772-33.268h-42.508l5.545 64.225 85.945 25.412 85.479-24.951 11.09-127.523H171.827z"
+                                fill="rgb(221, 221, 221)" id="path4" />
+                            <path d="M162.898 196.167H373.59l-4.157 41.122H167.98l-5.082-41.122z"
+                                fill="rgb(221, 221, 221)" id="path4" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center">
+                    <div class="reparacion col-md-6 col-12">
+                        <i class="fas fa-tools" title="Reparacion de PC"></i>
+                        <i class="fas fa-desktop" title="Reparacion de PC"></i>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <i class="fas fa-photo-video" title="Fotografia y video"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container my-5 w-75 mx-auto text-center">
+                <h1 class="tituloSecundario text-white">Portfolio</h1>
+                <div class="d-flex flex-md-row flex-column flex-wrap">
+                    <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                        <div class="interior-card">
+                            <a href="https://ejercicio-3-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                                    src="img/1primer-blog.png" class="card-img-top" alt="primera pagina"
+                                    id="imagen-portfolio"></a>
+                            <div class="card-body">
+                                <p class="card-text">Primer blog realizado durante el cursado, aprendiendo a usar Style.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                        <div class="interior-card">
+                            <a href="https://ejercicio-4-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                                    src="img/2pagina-entrada2.jpg" class="card-img-top" alt="planilla pagina entrada">
+                                <div class="card-body">
+                            </a>
+                            <p class="card-text">Primer ejercicio de trabajo de bloques dentro de html.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                    <div class="interior-card">
+                        <a href="https://ejercicio-5-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                                src="img/3hamburguesaCss.jpg" class="card-img-top" alt="Hamburguesa CSS"
+                                id="imagen-portfolio"></a>
+                        <div class="card-body">
+                            <p class="card-text">Creacion de la hamburguesa con CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                    <div class="interior-card">
+                        <a href="https://ejercicio-6-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                                src="img/4paginaFormulario.jpg" class="card-img-top" alt="formularios html"
+                                id="imagen-portfolio"></a>
+                        <div class="card-body">
+                            <p class="card-text">Ejercicio de formularios en html.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                    <div class="interior-card">
+                        <a href="https://ejercicio-7-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                                src="img/5adopcionFlex.jpg" class="card-img-top" alt="entrada con Flex"></a>
+                        <div class="card-body">
+                            <p class="card-text">Ejercicio de trabajo con Flex.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                    <div class="interior-card">
+                        <a href="https://ejercicio-8-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                                src="img/6GifPaginaAnimada.gif" class="card-img-top" alt="Pagina Animada"
+                                id="imagen-portfolio"></a>
+                        <div class="card-body">
+                            <p class="card-text">Ejercicio de uso de animaciones con CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                    <div class="interior-card">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/1photo.JPG" class="d-block w-100 seguidas"
+                                        alt="Atardecer en la ciudad" id="imagen-portfolio">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="img/2photo.JPG" class="d-block w-100 seguidas" alt="Flor con fondo negro"
+                                        id="imagen-portfolio">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="img/3photo.JPG" class="d-block w-100 seguidas"
+                                        alt="gaviota cerca de la costa" id="imagen-portfolio">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="img/4photo.JPG" class="d-block w-100 seguidas" alt="Talampaya argentina"
+                                        id="imagen-portfolio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Algunas fotos editadas personalmente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                    <div class="interior-card">
+                        <video width="100%" autoplay muted loop id="imagen-portfolio">
+                            <source src="img/primer video mini3.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <p class="card-text">Video hecho con Drone. (DJI Mavic Mini)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mx-auto col-10 col-md-5 col-lg-4">
+                    <div class="interior-card">
+                        <img src="img/IMG_8880.JPG" class="card-img-top" alt="atardecer de mar" id="imagen-portfolio">
+                        <div class="card-body">
+                            <p class="card-text">Ejemplo de foto sin editar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="contacto">
+            <div class="container my-5 mx-auto">
+                <h1 class="tituloSecundario text-center text-white pb-5">Contacto</h1>
+
+                <form class="needs-validation" novalidate action="https://formspree.io/f/mpzolrvw" method="post">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" class="form-control" id="Nombre" name="nombre" required>
+                            <div class="valid-feedback">
+                                Bien!
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" class="form-control" id="Apellido" name="apellido"
+                                required>
+                            <div class="valid-feedback">
+                                Bien!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Ciudad">Ciudad</label>
+                            <input type="text" class="form-control" id="Ciudad" name="ciudad" required>
+                            <div class="valid-feedback">
+                                Porfavor, ingresa una Ciudad...
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Pais">Pais</label>
+                            <select class="custom-select" id="Pais" name="pais" required>
+                                <option selected disabled value="">Seleccionar...</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                            <div class="valid-feedback">
+                                Por favor seleccione un Pais...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" name="email"
+                                placeholder="mail@mimail.com" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Telefono" class="col-12">Teléfono</label>
+                            <div class="d-flex flex-md-row">
+                                <input type="number" class="form-control col-3" id="Telefono" placeholder="+549"
+                                    minlength="2" maxlength="4" name="car-telefono" required>
+                                <input type="number" class="form-control col-9" id="Telefono"
+                                    placeholder="11234567890" minlength="7" maxlength="12" name="nro-telefono" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Consulta">Consulta</label>
+                        <textarea class="form-control" id="Consulta" placeholder="Escriba aqui su consulta..."
+                            name="consulta" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="mas-info" id="invalidCheck"
+                                name="info">
+                            <label class="form-check-label" for="invalidCheck">
+                                Deseo recibir mas informacion en el futuro
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer class="text-center py-2">
+        <p>Matias Palacio - &copy; 2020</p>
+    </footer>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 1500
+        })
+    </script>
+    <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+    </script>
+</body>
+
+</html>
