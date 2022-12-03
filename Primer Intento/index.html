@@ -103,6 +103,8 @@
 
             </div>
         </div>
+
+        <!-- Skills Obtenidas hasta el momento del curso.-->
         <div id="skills">
             <div class="pt-5 container w-50 mx-auto text-center my-5">
                 <h1 class="my-5 tituloSecundario text-white">Skills</h1>
@@ -200,13 +202,14 @@
                 </div>
             </div>
         </div>
+        <!--Ejemplo de ejercicios hechos por mi cuenta durante el transcurso del curso. -->
         <div id="portfolio">
             <div class="container my-5 w-75 mx-auto text-center">
                 <h1 class="tituloSecundario text-white">Portfolio</h1>
                 <div class="d-flex flex-md-row flex-column flex-wrap">
                     <div class="card mx-auto col-10 col-md-5 col-lg-4">
                         <div class="interior-card">
-                            <a href="https://ejercicio-3-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                            <a href="" target="_blank"><img
                                     src="img/1primer-blog.png" class="card-img-top" alt="primera pagina"
                                     id="imagen-portfolio"></a>
                             <div class="card-body">
@@ -217,7 +220,7 @@
                     </div>
                     <div class="card mx-auto col-10 col-md-5 col-lg-4">
                         <div class="interior-card">
-                            <a href="https://ejercicio-4-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                            <a href="" target="_blank"><img
                                     src="img/2pagina-entrada2.jpg" class="card-img-top" alt="planilla pagina entrada">
                                 <div class="card-body">
                             </a>
@@ -227,7 +230,7 @@
                 </div>
                 <div class="card mx-auto col-10 col-md-5 col-lg-4">
                     <div class="interior-card">
-                        <a href="https://ejercicio-5-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                        <a href="" target="_blank"><img
                                 src="img/3hamburguesaCss.jpg" class="card-img-top" alt="Hamburguesa CSS"
                                 id="imagen-portfolio"></a>
                         <div class="card-body">
@@ -237,7 +240,7 @@
                 </div>
                 <div class="card mx-auto col-10 col-md-5 col-lg-4">
                     <div class="interior-card">
-                        <a href="https://ejercicio-6-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                        <a href="" target="_blank"><img
                                 src="img/4paginaFormulario.jpg" class="card-img-top" alt="formularios html"
                                 id="imagen-portfolio"></a>
                         <div class="card-body">
@@ -247,7 +250,7 @@
                 </div>
                 <div class="card mx-auto col-10 col-md-5 col-lg-4">
                     <div class="interior-card">
-                        <a href="https://ejercicio-7-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                        <a href="" target="_blank"><img
                                 src="img/5adopcionFlex.jpg" class="card-img-top" alt="entrada con Flex"></a>
                         <div class="card-body">
                             <p class="card-text">Ejercicio de trabajo con Flex.</p>
@@ -256,7 +259,7 @@
                 </div>
                 <div class="card mx-auto col-10 col-md-5 col-lg-4">
                     <div class="interior-card">
-                        <a href="https://ejercicio-8-mgp-fs2020-10.netlify.app/" target="_blank"><img
+                        <a href="" target="_blank"><img
                                 src="img/6GifPaginaAnimada.gif" class="card-img-top" alt="Pagina Animada"
                                 id="imagen-portfolio"></a>
                         <div class="card-body">
@@ -293,9 +296,12 @@
                 </div>
                 <div class="card mx-auto col-10 col-md-5 col-lg-4">
                     <div class="interior-card">
-                        <video width="100%" autoplay muted loop id="imagen-portfolio">
-                            <source src="img/primer video mini3.mp4" type="video/mp4">
-                        </video>
+                        <iframe id="imagen-portfolio" src="https://www.youtube-nocookie.com/embed/Bu-F2h6KngI?autoplay=1&loop=1&modestbranding=1&rel=0&iv_load_policy=3&theme=light&fs=0&controls=0&disablekb=1" width="100%" frameborder="0"></iframe>
+
+                        <!--<iframe width="100%"  id="imagen-portfolio">
+                            <source src="https://youtu.be/Bu-F2h6KngI">
+                             https://youtu.be/Bu-F2h6KngI  link al video del drone  autoplay muted loop
+                        </iframe>-->
                         <div class="card-body">
                             <p class="card-text">Video hecho con Drone. (DJI Mavic Mini)</p>
                         </div>
@@ -312,6 +318,7 @@
             </div>
         </div>
         </div>
+        <!-- Formulario de contacto que envia un mail con todos los datos obtenidos a través de una API ya existente-->
         <div id="contacto">
             <div class="container my-5 mx-auto">
                 <h1 class="tituloSecundario text-center text-white pb-5">Contacto</h1>
@@ -406,18 +413,20 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+        //velocidad de ciclo del carrousel.-
         $('.carousel').carousel({
             interval: 1500
         })
     </script>
     <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            // Example starter JavaScript for disabling form submissions if there are invalid fields.
+            // Ejemplo de Javascript para desabilitar el envio de los datos del Form si hay datos invalidos
             (function () {
                 'use strict';
                 window.addEventListener('load', function () {
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to and Loop over them and prevent submission. 
+                    // Para obtener todos los campos que deben ser validados. y evitar que se envien.
                     var forms = document.getElementsByClassName('needs-validation');
-                    // Loop over them and prevent submission
                     var validation = Array.prototype.filter.call(forms, function (form) {
                         form.addEventListener('submit', function (event) {
                             if (form.checkValidity() === false) {
