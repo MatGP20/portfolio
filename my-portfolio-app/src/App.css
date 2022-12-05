@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@500&display=swap');
+
+
+
+.navbar{
+  background-color: #313131;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a{
+  color: rgb(172, 172, 172);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-brand, .active{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a:hover{
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:active{
+  color: white;
+}
+
+.navbar{
+  height: 6rem;
+  font-family: 'Big Shoulders Inline Display', cursive;
+}
+
+.navbar-toggler{
+  background-color: #515151;
+  color: white;
+  border: double black;
+  box-shadow: 0 0 2vh #414141 ;
+}
+
+.navbar-collapse{
+  /* background-color: #313131; */
+  padding: 2vh;
+  /* border-radius: 0 0 5vw 5vw; */
 }
