@@ -1,37 +1,63 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App  from './App';
-import PruebasDeFun from './Prueba'
+import NavBar  from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    
+  <React.StrictMode>        
   </React.StrictMode>
 );
 
 const navbarRoot = ReactDOM.createRoot(document.getElementById('navbarRoot'));
 navbarRoot.render(
   <React.StrictMode>
-    <App />
+    <NavBar />
   </React.StrictMode>
 );
 
-// const presentationRoot = ReactDOM.createRoot(document.getElementById('presentationRoot'));
-// presentationRoot.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const presentationRoot = ReactDOM.createRoot(document.getElementById('presentationRoot'));
+presentationRoot.render(
+  <React.StrictMode>
+       
+  </React.StrictMode>
+);
 
-// const footerRoot = ReactDOM.createRoot(document.getElementById('footerRoot'));
-// footerRoot.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const aboutMeRoot = ReactDOM.createRoot(document.getElementById('aboutMeRoot'));
+aboutMeRoot.render(
+  <React.StrictMode>
+       
+  </React.StrictMode>
+);
+
+const skillsRoot = ReactDOM.createRoot(document.getElementById('skillsRoot'));
+skillsRoot.render(
+  <React.StrictMode>
+        
+  </React.StrictMode>
+);
+
+const proyectsRoot = ReactDOM.createRoot(document.getElementById('proyectsRoot'));
+proyectsRoot.render(
+  <React.StrictMode>
+        
+  </React.StrictMode>
+);
+
+const contactRoot = ReactDOM.createRoot(document.getElementById('contactRoot'));
+contactRoot.render(
+  <React.StrictMode>
+        
+  </React.StrictMode>
+);
+
+const footerRoot = ReactDOM.createRoot(document.getElementById('footerRoot'));
+footerRoot.render(
+  <React.StrictMode>
+        
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

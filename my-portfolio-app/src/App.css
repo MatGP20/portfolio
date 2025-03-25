@@ -10,9 +10,9 @@ nav a{
   color: rgb(172, 172, 172);
 }
 
-.navbar-brand, .active{
+/* .navbar-brand {
   color: white;
-}
+} */
 
 .navbar a:hover{
   color: whitesmoke;
