@@ -5,3 +5,8 @@
 /Blazor-Portfolio/WebApp.Portfolio/bin
 
 /Blazor-Portfolio/WebApp.Portfolio/obj
+/Blazor-Portfolio/WebApp.Portfolio/obj/Debug/net8.0/WebApp.Portfolio.AssemblyInfo.cs
+/Blazor-Portfolio/WebApp.Portfolio/obj/Debug/net8.0/WebApp.Portfolio.AssemblyInfoInputs.cache
+*.vsidx
+/Blazor-Portfolio/.vs/Blazor-Portfolio/FileContentIndex/ca5e6398-c581-47d0-a9a7-72f1aa9d2fb9.vsidx
+/Blazor-Portfolio/.vs/Blazor-Portfolio/FileContentIndex/ca5e6398-c581-47d0-a9a7-72f1aa9d2fb9.vsidx
