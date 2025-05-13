@@ -6,10 +6,16 @@
 
 main {
     flex: 1;
+    
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: url(../../wwwroot/img/backHexa-Black.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*height: 100vh;
+    width: 98vw;*/
 }
 
 .top-row {
@@ -94,3 +100,36 @@ main {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+.bodySpace {
+    background-color : black;
+    height: 100vh;
+    width: 85vw;
+}
+
+body {
+    --sb-track-color: #888888;
+    --sb-thumb-color: #4124ff;
+    --sb-size: 10px;
+}
+
+    body::-webkit-scrollbar {
+        width: var(--sb-size);
+    }
+
+    body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 10px;
+        border: 1px solid #6c76a5;
+    }
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}

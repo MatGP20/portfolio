@@ -5,8 +5,6 @@
 /Blazor-Portfolio/WebApp.Portfolio/bin
 
 /Blazor-Portfolio/WebApp.Portfolio/obj
-/Blazor-Portfolio/WebApp.Portfolio/obj/Debug/net8.0/WebApp.Portfolio.AssemblyInfo.cs
-/Blazor-Portfolio/WebApp.Portfolio/obj/Debug/net8.0/WebApp.Portfolio.AssemblyInfoInputs.cache
 *.vsidx
 /Blazor-Portfolio/.vs/Blazor-Portfolio/FileContentIndex/ca5e6398-c581-47d0-a9a7-72f1aa9d2fb9.vsidx
 /Blazor-Portfolio/.vs/Blazor-Portfolio/FileContentIndex/ca5e6398-c581-47d0-a9a7-72f1aa9d2fb9.vsidx
@@ -14,10 +12,6 @@
 /Blazor-Portfolio/.vs/ProjectEvaluation/blazor-portfolio.projects.v9.bin
 /Blazor-Portfolio/.vs/ProjectEvaluation/blazor-portfolio.strings.v9.bin
 /Blazor-Portfolio/.vs/Blazor-Portfolio/DesignTimeBuild/.dtbcache.v2
-/Blazor-Portfolio/.vs/Blazor-Portfolio/v17/.suo
-/Blazor-Portfolio/BlazorWebPortfolio/appsettings.json
+/Blazor-Portfolio/.vs/Blazor-Portfolio/v17
 /Blazor-Portfolio/BlazorWebPortfolio/appsettings.Development.json
-/Blazor-Portfolio/BlazorWebPortfolio/appsettings.Development.json
-/Blazor-Portfolio/.vs/Blazor-Portfolio/v17/.futdcache.v2
-/Blazor-Portfolio/BlazorWebPortfolio/obj/Debug/net8.0/BlazorWebPortfolio.AssemblyInfo.cs
-/Blazor-Portfolio/BlazorWebPortfolio/obj/Debug/net8.0/BlazorWebPortfolio.AssemblyInfoInputs.cache
+/Blazor-Portfolio/BlazorWebPortfolio/obj/Debug/net8.0/
