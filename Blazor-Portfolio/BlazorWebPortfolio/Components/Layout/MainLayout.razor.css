@@ -1,7 +1,6 @@
-.page {
+/*.page {
     position: relative;
     display: flex;
-    flex-direction: column;
 }
 
 main {
@@ -10,12 +9,10 @@ main {
 }
 
 .sidebar {
-    background-image: url(../../wwwroot/img/backHexa-Black.png);
+    background-image: src(../../wwwroot/img/backHexa-Black.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*height: 100vh;
-    width: 98vw;*/
 }
 
 .top-row {
@@ -42,7 +39,11 @@ main {
         text-overflow: ellipsis;
     }
 
-@media (max-width: 640.98px) {
+@media (min-width: 755.98px) {
+    .sidebar {
+        width:100vw;
+        height: 4rem;
+    }
     .top-row {
         justify-content: space-between;
     }
@@ -52,35 +53,34 @@ main {
     }
 }
 
-@media (min-width: 641px) {
+@media (max-width: 756px) {
     .page {
         flex-direction: row;
     }
 
     .sidebar {
-        width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row {
+   .top-row {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
+        .top-row.auth ::deep a:first-child {
+            flex: 1;
+            text-align: right;
+            width: 0;
+        }
 
     .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
     }
-}
+}*/
 
 #blazor-error-ui {
     background: lightyellow;
@@ -132,4 +132,17 @@ body {
     body {
         scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
+}
+
+.bodyContainer {
+    min-height: 90vh;
+    overflow: auto;
+}
+
+/* footer */
+footer {
+    height: 2rem;
+    background-color: #CA3E47;
+    font-family: 'Fredericka the Great', cursive;
+    position: sticky;
 }

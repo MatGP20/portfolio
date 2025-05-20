@@ -7,6 +7,11 @@ builder.Services.AddRazorComponents()
 
 var app = builder.Build();
 
+//app.MapGet("/", context => {
+//    context.Response.Redirect("/aboutme");
+//    return Task.CompletedTask;
+//});
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);

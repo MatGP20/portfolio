@@ -1,37 +1,40 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <img src="img/MGPLogo-small.png" alt="MGP Portfolio Logo" class="portfLogo"/>
-        <a class="navbar-brand" href="">PORTFOLIO</a>
+﻿<div class="top-row">
+    <div class="ps-3 navbar navbar-dark col-8 col-sm-6 col-md-3 m-0">
+        <div class="brand">
+            
+            <a class="navbar-brand" href="/"> <img src="img/MGPLogo.png" alt="MGP Portfolio Logo" class="portfLogo" /> @(pageTittle)</a>
+        </div>
     </div>
-</div>
+    <div class="col-md-9 m-0">
+        <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+        @* onclick="document.querySelector('.navbar-toggler').click()" *@
+        <div class="nav-scrollable">
+            <nav class="navItemsRow">
+                <div class="nav-item col-12 col-md-3">
+                    <NavLink class="nav-link" href="/aboutme" Match="NavLinkMatch.All" onclick="@(()=>ChangeTittle())">
+                        <i class="bi bi-fingerprint icon"></i> About Me
+                    </NavLink>
+                </div>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
-@* onclick="document.querySelector('.navbar-toggler').click()" *@
-<div class="nav-scrollable" >
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <i class="bi bi-fingerprint icon"></i> AboutMe
-            </NavLink>
-        </div>
+                <div class="nav-item col-12 col-md-3">
+                    <NavLink class="nav-link" href="/skills" onclick="@(()=>ChangeTittle())">
+                        <i class="bi bi-boxes icon"></i> Skills
+                    </NavLink>
+                </div>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="">
-                <i class="bi bi-boxes icon"></i> Skills
-            </NavLink>
-        </div>
+                <div class="nav-item col-12 col-md-3">
+                    <NavLink class="nav-link" href="/portfolio" onclick="@(()=>ChangeTittle())">
+                        <i class="bi bi-grid-3x2-gap icon"></i> Portfolio
+                    </NavLink>
+                </div>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="">
-                <i class="bi bi-grid-3x2-gap icon"></i> Portfolio
-            </NavLink>
+                <div class="nav-item col-12 col-md-3">
+                    <NavLink class="nav-link" href="/contact" onclick="@(()=>ChangeTittle())">
+                        <i class="bi bi-person-vcard icon"></i> Contacto
+                    </NavLink>
+                </div>
+            </nav>
         </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="">
-                <i class="bi bi-person-vcard icon"></i> Contacto
-            </NavLink>
-        </div>
-    </nav>
+    </div>    
 </div>
 
