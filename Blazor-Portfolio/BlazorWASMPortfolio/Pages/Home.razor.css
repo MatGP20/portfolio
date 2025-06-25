@@ -34,9 +34,17 @@
 .titleC {
     text-shadow: 0.3rem 0.3rem 0.6rem white;
     font-size: 4rem;
+    align-content:center;
 }
 
 .carouselTittle {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carouselTittle2 {
     display: flex;
     z-index: 1;
 }
@@ -47,8 +55,8 @@
 }
 
 .picture {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     mask-image: radial-gradient( circle at center, black 0%, black 50%, transparent 75%, transparent 100% );
     mask-mode: alpha;
 }
@@ -61,16 +69,17 @@
 }
 
 @media (min-width:1360px) {
+    .carouselTittle2{
+        align-content:center;
+        justify-content:space-between;
+    }
+
     .pictureFrame {
-        width: 40rem;
+        height: 30rem;
     }
 
     .pictureFrame2 {
-        width: 40rem;
-    }
-
-    .carouselTittle {
-        justify-content: space-between;
+        height: 30rem;
     }
 
     .titleA {
@@ -84,18 +93,19 @@
 }
 
 @media (576px <= width <= 1360px) {
-    .carouselTittle {
-        justify-content: center;
+    .carouselTittle2 {
         flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
 
     .pictureFrame {
-        width: 25rem;
+        height: 30rem;
         margin: 0 auto;
     }
 
     .pictureFrame2 {
-        width: 30rem;
+        height: 25rem;
     }
 
     .titleA {
@@ -109,18 +119,19 @@
 }
 
 @media (max-width: 576px) {
-    .carouselTittle {
-        justify-content: center;
+    .carouselTittle2 {
         flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
 
     .pictureFrame {
-        width: 15rem;
+        height: 25rem;
         margin: 0 auto;
     }
 
     .pictureFrame2 {
-        width: 20rem;
+        height: 20rem;
     }
 
     .titleA {

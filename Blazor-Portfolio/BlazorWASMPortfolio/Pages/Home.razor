@@ -13,10 +13,10 @@
         <div class="carousel-item active" data-bs-interval="25000">
             <img src="img/back1.jpg" class="d-block w-100 carousel-img" alt="Fondo Carrusel 1">
             <div class="carouselTittle carousel-caption align-items-center h-100">
-                <div class="pictureFrame col-12 col-lg-6">
+                <div class="pictureFrame col-12">
                     <img src="img/Foto Perfil.png" class="picture" alt="Picture of Me">
                 </div>
-                <h1 class="nombreTitulo titleA mt-4 col-12 col-lg-6 text-center">MATIAS GABRIEL PALACIO</h1>
+                <h1 class="nombreTitulo titleA mt-4 col-12 text-center">MATIAS GABRIEL PALACIO</h1>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="25000">
@@ -27,7 +27,7 @@
         </div>
         <div class="carousel-item" data-bs-interval="25000">
             <img src="img/back3.jpg" class="d-block w-100 carousel-img" alt="Fondo Carrusel 3">
-            <div class="carouselTittle carousel-caption align-items-center h-100">
+            <div class="carouselTittle2 carousel-caption align-items-center h-100">
                 <div class="pictureFrame2 col-12 col-lg-6">
                     <img src="img/2photo2.png" class="picture" alt="Picture of Me">
                 </div>
@@ -35,13 +35,19 @@
             </div>
         </div>
     </div>    
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" id="prevButton">
         <span class="carousel-control-prev-icon tex" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" id="nextButton">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
     
 </div>
+
+<script>
+    setTimeout(function () {
+    document.getElementById("nextButton").click();
+    }, 10000);
+</script>
