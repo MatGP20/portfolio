@@ -48,6 +48,9 @@
 
 <script>
     setTimeout(function () {
-    document.getElementById("nextButton").click();
+        const btn = document.getElementById("nextButton");
+        if(btn){
+            btn.click();
+        }
     }, 10000);
 </script>

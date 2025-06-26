@@ -1,6 +1,224 @@
-﻿body {
+﻿.accordionDiv {
+    display: flex;
+    width: clamp(23rem, 94dvw, 115rem);
+    overflow: hidden;
 }
 
+.choice {
+    height: 85dvh;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.expand {
+    width: 100dvw;
+    transition: background-color 200ms ease-in-out;
+}
+    .expand > .frontBackImage {
+        background-image: url("/img/FrontendBack01.png");
+        background-size: cover;
+        filter: drop-shadow(-5px -5px 15px #000);
+    }
+
+    .expand > .backBackImage {
+        background-image: url("/img/BackendBack01.png");
+        background-size: cover;
+        filter: drop-shadow(-5px -5px 15px #000);
+    }
+
+    .expand > .otherBackImage {
+        background-image: url("/img/OthersBack01.png");
+        background-size: cover;
+        filter: drop-shadow(-5px -5px 15px #000);
+    }
+
+.unset {
+    width: 16%;
+    color: black !important;
+    background-color: #000 !important;
+}
+
+.small {
+    width: clamp(3rem, 10dvw, 5rem);
+    background-color: #000 !important;
+    border-radius: 15px;
+    cursor: grab;
+    transition-delay: 50ms;
+    transition: background-color 1s ease-in-out, width 0.3s;
+}
+
+    .small > div {
+        opacity: 0.7;
+    }
+
+        .small > div > h1 {
+            font-size: clamp(0.8rem, 5dvw, 2.5rem);
+            text-align: center;
+            height: 80dvh;
+            width: 95%;
+            background-color:#000;
+        }
+
+        .small > div > .cardBlock {
+            width: 3%;
+            opacity: 0;
+        }
+
+.expand > div {
+    height: inherit;
+    width: 100%;
+    transition-delay: 200ms;
+    opacity: 1;
+}
+
+    .expand > div > h1 {
+        font-size: clamp(2rem, 8dvw, 3rem);
+        width: clamp(3rem, 10dvw, 4.5rem);
+        height: 100%;
+        margin-right: 1rem;
+        border: solid 2px #555;
+        border-radius: 15px;
+        box-shadow: 8px 0px 15px 4px #555;
+        text-shadow: 5px 0px #333333;
+        background-color: #222222bb;
+    }
+
+    .expand > div > .cardBlock {
+        opacity: 1;
+        /*align-content: center;*/
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+.cardTitle {
+    height: 100%;
+    text-orientation: revert;
+    text-align: center;
+}
+
+h1 {
+    align-content: center;
+}
+
+.cardBlock {
+    height: 85dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.skillSectionBlock {
+    display: flex;
+    flex-direction: column;
+    height: clamp(26rem, 36dvh, 40rem);
+    margin: 1rem;
+    border: solid 3px black;
+    border-radius: 35px;
+    box-shadow: inset 6px 8px 10px 5px #555;
+    background: #121212e3;
+}
+
+    .skillSectionBlock > h5 {
+        font-size: clamp(1rem, 2dvw, 4rem);
+        text-decoration: underline wavy #555;
+    }
+
+.skillSection {
+    display: flex;
+    height: clamp(20rem, 28dvh, 35rem);
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.skillName {
+    display: flex;
+    margin: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 4px #272727;
+    border-radius: 20px;
+    box-shadow: 6px 8px 10px 5px #555555;
+    padding: 8px;
+}
+
+    .skillName > p {
+        font-size: clamp(1rem, 2dvw, 4rem );
+        text-align: center;
+    }
+
 .iconSkill {
-    height: 1.5rem;
+    height: clamp(3rem, 2dvh, 4rem);
+}
+
+@media (min-width:1360px) {
+    .skillSectionBlock {
+        width: 30dvw;
+    }
+
+    .expand > div > .cardBlock {
+        width: clamp(50rem, 90%, 100rem);
+    }
+
+    .skillName {
+        width: 70%;
+    }
+
+        .skillName > p {
+            width: 57%;
+        }
+
+    .skillSection > *:nth-child(even) {
+        margin-left: auto;
+    }
+
+    .skillSection > *:nth-child(odd) {
+        margin-right: auto;
+    }
+}
+
+@media (1024px <= width <= 1360px) {
+    .skillSectionBlock {
+        width: 25dvw;
+    }
+
+    .expand > div > .cardBlock {
+        width: 90%;
+    }
+
+    .skillName {
+        width: 70%;
+    }
+
+        .skillName > p {
+            width: 75%;
+        }
+
+    .skillSection > *:nth-child(even) {
+        margin-left: auto;
+    }
+
+    .skillSection > *:nth-child(odd) {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .skillSectionBlock {
+        width: 90%;
+    }
+
+    .expand > div > .cardBlock {
+        width: clamp(10rem, 83%, 40rem);
+    }
+
+    .skillName {
+        flex-direction: column;
+    }
+
+        .skillName > p {
+            width: 85%;
+        }
 }

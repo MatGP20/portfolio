@@ -75,6 +75,9 @@
 
 <script>
     setTimeout(function () {
-    document.getElementById("nextAMButton").click();
+        const btn = document.getElementById("nextAMButton");
+        if(btn){
+            btn.click();
+        }
     }, 1500);
 </script>
