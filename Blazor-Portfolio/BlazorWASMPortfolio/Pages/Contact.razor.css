@@ -1,2 +1,22 @@
 ﻿body {
 }
+
+.countrySelect {
+    /*font-size: rem;*/
+    text-align: center;
+    justify-content: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    background-color: #00000000;
+    border-radius: 5px;
+    border-color: #646464;
+    cursor: grab;
+}
+
+.countrySelect option {
+    color: black;
+}
+
+.linkedIcon {
+    width:8rem;
+}
