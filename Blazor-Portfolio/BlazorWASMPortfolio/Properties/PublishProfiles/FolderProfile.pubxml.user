@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\programación\Front\portfolio\Blazor-Portfolio\BlazorWASMPortfolio\publish</_PublishTargetUrl>
+    <History>True|2025-09-26T23:59:27.2469837Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
 </Project>
