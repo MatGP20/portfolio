@@ -9,9 +9,11 @@ namespace BlazorWASMPortfolio.Pages
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            await JS.InvokeVoidAsync("startCarrousel");
-
-            await JS.InvokeVoidAsync("autoRealScroll", ".textBlock");            
+            if (firstRender)
+            {
+                await JS.InvokeVoidAsync("startCarrousel");
+                await JS.InvokeVoidAsync("autoRealScroll", ".textBlock");
+            }
 
             await base.OnAfterRenderAsync(firstRender);
         }

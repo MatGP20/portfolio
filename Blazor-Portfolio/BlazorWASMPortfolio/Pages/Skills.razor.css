@@ -121,7 +121,7 @@ h1 {
 
     .skillSectionBlock > h5 {
         font-size: clamp(1rem, 2dvw, 4rem);
-        text-decoration: underline wavy #555;
+        /* text-decoration: underline wavy #555; */
     }
 
 .skillSection {
@@ -145,8 +145,9 @@ h1 {
 }
 
     .skillName > p {
-        font-size: clamp(1rem, 2dvw, 4rem );
+        font-size: clamp(1rem, 1.5dvw, 3rem );
         text-align: center;
+        margin: 0;
     }
 
 .iconSkill {

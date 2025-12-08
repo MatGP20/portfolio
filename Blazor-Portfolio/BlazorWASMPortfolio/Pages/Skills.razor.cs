@@ -13,7 +13,11 @@ namespace BlazorWASMPortfolio.Pages
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            await AutoScrollSkill(".frontBlock");
+            if (firstRender)
+            {
+                await AutoScrollSkill(".frontBlock");
+            }
+
             await base.OnAfterRenderAsync(firstRender);
         }
 
