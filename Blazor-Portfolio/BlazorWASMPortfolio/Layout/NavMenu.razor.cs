@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Routing;
 
 namespace BlazorWASMPortfolio.Layout
 {
-    public partial class NavMenu : ComponentBase
+    public partial class NavMenu : ComponentBase, IDisposable
     {
         private string? pageTittle;
 
@@ -19,14 +20,21 @@ namespace BlazorWASMPortfolio.Layout
 
         protected override async Task OnInitializedAsync()
         {
-            await ChangeTittle();
+            navMgr.LocationChanged += HandleLocationChanged;
+            UpdateTitle(navMgr.Uri);
+            await base.OnInitializedAsync();
         }
 
-        private async Task ChangeTittle()
+        private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
         {
-            await Task.Delay(500);
-            var pageUri = navMgr.Uri.Split("/", StringSplitOptions.RemoveEmptyEntries);
-            switch (pageUri[pageUri.Length - 1])
+            UpdateTitle(e.Location);
+            InvokeAsync(StateHasChanged);
+        }
+
+        private void UpdateTitle(string uri)
+        {
+            var pageUri = new Uri(uri).AbsolutePath.Trim('/').ToLowerInvariant();
+            switch (pageUri)
             {
                 case "aboutme":
                     pageTittle = "ABOUT ME";
@@ -44,7 +52,11 @@ namespace BlazorWASMPortfolio.Layout
                     pageTittle = string.Empty;
                     break;
             }
-            await InvokeAsync(StateHasChanged);
+        }
+
+        public void Dispose()
+        {
+            navMgr.LocationChanged -= HandleLocationChanged;
         }
     }
 }
